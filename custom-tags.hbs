@@ -1,0 +1,41 @@
+{{!< default}} <div class="content-area">
+    <header class="single-header kg-canvas">
+        {{#post}}
+        <h1 class="single-title">{{title}}</h1>
+        {{#if custom_excerpt}}
+        <div class="single-excerpt">
+            {{custom_excerpt}}
+        </div>
+        {{/if}}
+        {{/post}}
+    </header>
+    <main class="site-main">
+        <div class="container">
+            
+                {{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
+                {{#foreach tags }}
+                <div class="post-feed container medium">
+<article class="feed post tag-loop">
+
+<h2 class="feed-title">{{name}}</h2>
+
+<div class="feed-length">
+ 
+</div>
+
+<svg class="icon feed-icon">
+<use xlink:href="#chevron-right"></use>
+</svg>
+<a class="u-permalink" href="{{url}}" aria-label="{{name}}"></a>
+</article>
+
+
+
+                     
+                </div>
+                {{/foreach}}
+                {{/get}}
+            
+        </div>
+    </main>
+    </div>

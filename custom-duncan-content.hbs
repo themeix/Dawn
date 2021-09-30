@@ -1,0 +1,13 @@
+{{!< default}} 
+<div class="content-area">
+    <main class="site-main">
+        <div class="post-feed container medium">
+            {{#get 'posts' include="tags,authors" order="title asc"}}
+                {{#foreach posts }}
+                {{> "loop"}}
+                {{/foreach}}
+            {{/get}}
+        </div>
+        {{!-- {{pagination}} --}}
+    </main>
+</div>
