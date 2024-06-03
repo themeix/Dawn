@@ -48,7 +48,7 @@
         "zip": "gulp zip"
     },
     "devDependencies": {
-        "autoprefixer": "10.4.14",
+        "autoprefixer": "10.4.19",
         "beeper": "2.1.0",
         "cssnano": "5.1.15",
         "gscan": "4.36.1",
@@ -59,7 +59,7 @@
         "gulp-stylelint": "13.0.0",
         "gulp-uglify": "3.0.2",
         "gulp-zip": "5.1.0",
-        "postcss": "8.4.21",
+        "postcss": "8.4.38",
         "postcss-easy-import": "4.0.0",
         "pump": "3.0.0",
         "stylelint": "15.3.0",
